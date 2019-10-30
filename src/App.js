@@ -86,7 +86,7 @@ function App() {
             <button
               type="button"
               onClick={handleEditar.bind(
-                user,
+                "",
                 user.id,
                 user.nome,
                 user.quantidade,
