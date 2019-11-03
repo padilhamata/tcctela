@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import api from "./services/api";
 import "./App.css";
 
@@ -12,9 +12,10 @@ function App() {
   async function handleSubmit(event) {
     event.preventDefault();
     let response;
-    if (id.length == 0) {
+    if (id.length === 0) {
       response = await api.post("/produto", { nome, quantidade, valor });
     } else {
+      console.log(id, nome, quantidade, valor);
       response = await api.put("/produto", { id, nome, quantidade, valor });
     }
     console.log(response);
@@ -36,6 +37,28 @@ function App() {
     setNome(nomeEditado);
     setquantidade(quantidadeEditado);
     setvalor(valorEditado);
+  }
+  async function handleExcluir(
+    id,
+    nomeEditado,
+    quantidadeEditado,
+    valorEditado
+  ) {
+    setId(id);
+    setNome(nomeEditado);
+    setquantidade(quantidadeEditado);
+    setvalor(valorEditado);
+    console.log(id, nome, quantidade, valor, "aqui");
+    const responsedelete = await api.post("/produto/delete", {
+      id,
+      nome,
+      quantidade,
+      valor
+    });
+    const get = await api.get("/produtos");
+    setUser(get.data);
+    console.log(responsedelete);
+    console.log(get);
   }
 
   return (
@@ -94,6 +117,18 @@ function App() {
               )}
             >
               Editar
+            </button>
+            <button
+              type="button"
+              onClick={handleExcluir.bind(
+                "",
+                user.id,
+                user.nome,
+                user.quantidade,
+                user.valor
+              )}
+            >
+              Excluir
             </button>
           </div>
         ))}
