@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import api from "../api";
 import { Link } from "react-router-dom";
 
-import redefinirSenha from "./redefinirSenha/redefinirSenha";
-
 function Login() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
