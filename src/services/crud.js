@@ -37,23 +37,9 @@ function Crud() {
     setQuantidade(quantidadeEditado);
     setValor(valorEditado);
   }
-  async function handleExcluir(
-    id,
-    nomeEditado,
-    quantidadeEditado,
-    valorEditado
-  ) {
-    setId(id);
-    setNome(nomeEditado);
-    setQuantidade(quantidadeEditado);
-    setValor(valorEditado);
-    console.log(id, nome, quantidade, valor, "aqui");
-    const responsedelete = await api.post("/produto/delete", {
-      id,
-      nome,
-      quantidade,
-      valor
-    });
+
+  async function handleExcluir(id) {
+    const responsedelete = await api.delete("/produtos/"+id);
     const get = await api.get("/produtos");
     setUser(get.data);
     console.log(responsedelete);
@@ -121,10 +107,8 @@ function Crud() {
               type="button"
               onClick={handleExcluir.bind(
                 "",
-                user.id,
-                user.nome,
-                user.quantidade,
-                user.valor
+                user.id
+               
               )}
             >
               Excluir
