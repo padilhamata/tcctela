@@ -4,8 +4,8 @@ import api from "./api";
 function Crud() {
   const [id, setId] = useState("");
   const [nome, setNome] = useState("");
-  const [quantidade, setquantidade] = useState("");
-  const [valor, setvalor] = useState("");
+  const [quantidade, setQuantidade] = useState("");
+  const [valor, setValor] = useState("");
   const [users, setUser] = useState([]);
 
   async function handleSubmit(event) {
@@ -34,8 +34,8 @@ function Crud() {
   ) {
     setId(id);
     setNome(nomeEditado);
-    setquantidade(quantidadeEditado);
-    setvalor(valorEditado);
+    setQuantidade(quantidadeEditado);
+    setValor(valorEditado);
   }
   async function handleExcluir(
     id,
@@ -45,8 +45,8 @@ function Crud() {
   ) {
     setId(id);
     setNome(nomeEditado);
-    setquantidade(quantidadeEditado);
-    setvalor(valorEditado);
+    setQuantidade(quantidadeEditado);
+    setValor(valorEditado);
     console.log(id, nome, quantidade, valor, "aqui");
     const responsedelete = await api.post("/produto/delete", {
       id,
@@ -80,7 +80,7 @@ function Crud() {
           type="text"
           name="quantidade"
           id="quantidade"
-          onChange={event => setquantidade(event.target.value)}
+          onChange={event => setQuantidade(event.target.value)}
           value={quantidade}
         />
         <br />
@@ -89,7 +89,7 @@ function Crud() {
           type="text"
           name="valor"
           id="valor"
-          onChange={event => setvalor(event.target.value)}
+          onChange={event => setValor(event.target.value)}
           value={valor}
         />
         <button type="submit">Enviar</button>
