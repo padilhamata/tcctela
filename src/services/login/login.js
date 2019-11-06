@@ -60,34 +60,9 @@ function Login() {
         >
           Enviar
         </button>
-        <Link
-          to="/redefinirSenha"
-          
-        >
-          Esqueceu a senha?
-        </Link>
-
-        <h1>Abra uma conta</h1>
-
-        <label>Nome</label>
-        <input type="text" id="nome" name="nome"/>
-
-        <label>Sobrenome</label> 
-        <input type="text" id="sobrenome" name="sobrenome"/>
-
-        <label>CPF</label>
-        <input type="text" id="cpf" name="cpf"/>
-
-        <label>Telefone</label>
-        <input type="tel" id="telefone" name="telefone"/>
-
-        <label>E-mail</label>
-        <input type="email" id="email" name="email"/>
-
-        <label>Senha</label>
-        <input type="passoword" id="senha" name="senha"/>
-
-
+        <Link to="/redefinirSenha">Esqueceu a senha?</Link>
+        <br />
+        <Link to="/inscrever">Inscrever</Link>
       </div>
     </form>
   );
