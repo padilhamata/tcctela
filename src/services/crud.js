@@ -11,12 +11,18 @@ function Crud() {
   async function handleSubmit(event) {
     event.preventDefault();
     let response;
-    if (id.length === 0) {
-      response = await api.post("/produto", { nome, quantidade, valor });
+    console.log(nome, quantidade, valor);
+    if (id === 0) {
+      response = await api.post("/produtos", { nome, quantidade, valor });
     } else {
-      console.log(id, nome, quantidade, valor);
-      response = await api.put("/produto", { id, nome, quantidade, valor });
+      response = await api.put("/produtos", {
+        id,
+        nome,
+        quantidade,
+        valor
+      });
     }
+    console.log(id, nome, quantidade, valor);
     console.log(response);
   }
 
@@ -26,20 +32,15 @@ function Crud() {
     console.log(response);
   }
 
-  async function handleEditar(
-    id,
-    nomeEditado,
-    quantidadeEditado,
-    valorEditado
-  ) {
+  function handleEditar(id, nome, quantidade, valor) {
     setId(id);
-    setNome(nomeEditado);
-    setQuantidade(quantidadeEditado);
-    setValor(valorEditado);
+    setNome(nome);
+    setQuantidade(quantidade);
+    setValor(valor);
   }
 
   async function handleExcluir(id) {
-    const responsedelete = await api.delete("/produtos/"+id);
+    const responsedelete = await api.delete("/produtos/" + id);
     const get = await api.get("/produtos");
     setUser(get.data);
     console.log(responsedelete);
@@ -103,14 +104,7 @@ function Crud() {
             >
               Editar
             </button>
-            <button
-              type="button"
-              onClick={handleExcluir.bind(
-                "",
-                user.id
-               
-              )}
-            >
+            <button type="button" onClick={handleExcluir.bind("", user.id)}>
               Excluir
             </button>
           </div>
