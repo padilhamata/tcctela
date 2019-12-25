@@ -3,14 +3,18 @@ import { Link } from "react-router-dom";
 const Cabecalho = props => {
   return (
     <header>
-      <nav className="nav ">
-        <label>Tcc do Lucas</label>
-        <Link className="nav-link active" to="/">
-          Login
+      <nav className="navbar navbar-expand-sm bg-light navbar-light">
+        
+          <div className="navbar-header">
+            <label className="navbar-brand nav-link">Tcc do Lucas</label>
+          </div>
+          <Link className="nav-link active" to="/">
+            Login
         </Link>
-        <Link className="nav-link" to="/crud">
-          Crud
+          <Link className="nav-link" to="/crud">
+            Crud
         </Link>
+        
       </nav>
     </header>
   );

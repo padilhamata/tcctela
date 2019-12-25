@@ -14,8 +14,8 @@ function Login() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="container">
-        <div className="form-group ">
+      <div className="container" style={{width: '30%'}}>
+        <div className="form-group" >
           <label htmlFor="exampleInputEmail1">Endereço de email</label>
           <input
             type="email"
@@ -45,21 +45,25 @@ function Login() {
           />
         </div>
         <div className="form-group form-check">
+
+        <button style={{marginRight: '28px'}}
+          type="submit"
+          className="btn btn-primary form-group form-check-button"
+        >
+          Enviar
+        </button>
+
           <input
             type="checkbox"
             className="form-check-input"
             id="exampleCheck1"
           />
           <label className="form-check-label" htmlFor="exampleCheck1">
-            Clique em mim
+            Salvar a senha
           </label>
+       
         </div>
-        <button
-          type="submit"
-          className="btn btn-primary form-group form-check-button"
-        >
-          Enviar
-        </button>
+        <br/>
         <Link to="/redefinirSenha">Esqueceu a senha?</Link>
         <br />
         <Link to="/inscrever">Inscrever</Link>
