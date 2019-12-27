@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import api from "../api";
+import api from "../../api";
 import { Link } from "react-router-dom";
 
 function Login() {
@@ -14,7 +14,7 @@ function Login() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="container" style={{width: '30%'}}>
+      <div className="container" style={{ width: '30%' }}>
         <div className="form-group" >
           <label htmlFor="exampleInputEmail1">Endereço de email</label>
           <input
@@ -45,25 +45,28 @@ function Login() {
           />
         </div>
         <div className="form-group form-check">
-
-        <button style={{marginRight: '28px'}}
-          type="submit"
-          className="btn btn-primary form-group form-check-button"
-        >
-          Enviar
+          <div className="enviar">
+            <button
+              type="submit"
+              className="btn btn-primary form-group form-check-button"
+            >
+              Enviar
         </button>
-
-          <input
-            type="checkbox"
-            className="form-check-input"
-            id="exampleCheck1"
-          />
-          <label className="form-check-label" htmlFor="exampleCheck1">
-            Salvar a senha
+          </div>
+          <div className="checkbox">
+            <input
+              type="checkbox"
+              className="form-check-input"
+              id="exampleCheck1"
+            />
+          </div>
+          <div>
+            <label className="form-check-label" htmlFor="exampleCheck1">
+              Salvar a senha
           </label>
-       
+          </div>
         </div>
-        <br/>
+        <br />
         <Link to="/redefinirSenha">Esqueceu a senha?</Link>
         <br />
         <Link to="/inscrever">Inscrever</Link>

@@ -1,6 +1,7 @@
 import React from "react";
 import api from "../../api";
 
+
 function inscrever() {
   async function handleSubmit(event) {
     event.preventDefault();
@@ -9,7 +10,8 @@ function inscrever() {
   }
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} >
+        <div className="inscrever_form">
         <h1>Abra uma conta</h1>
         <br />
 
@@ -30,16 +32,18 @@ function inscrever() {
         <br />
 
         <label>E-mail: </label>
-        <input type="email" id="email" name="email" />
+        <input type="email" id="email" name="email"  placeholder="exemplo@examplo.com"  />
         <br />
 
         <label>Senha: </label>
-        <input type="password" id="senha" name="senha" />
+       <input type="password" id="senha"  autocomplete="new-password" /> 
+        {/* <input type="password" data-type="password" autocomplete="new-password" name="senha"  placeholder="" id="senha" ></input> */}
         <br />
 
         <button type="submit">Enviar</button>
+        </div>
       </form>
     </div>
   );
 }
-export default inscrever;
+export default inscrever

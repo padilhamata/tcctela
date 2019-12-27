@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
 import Crud from "./services/crud";
-import "./App.css";
+import "./App.scss";
 import Cabecalho from "./services/cabecalho/cabecalho";
-import Login from "./services/login/login";
+import Login from "./services/login/login/login";
 import RedefinirSenha from "./services/login/redefinirSenha/redefinirSenha";
 import Inscrever from "./services/login/inscrever/inscrever";
 
