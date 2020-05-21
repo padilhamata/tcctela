@@ -30,6 +30,18 @@ function inscrever() {
         <label>Telefone: </label>
         <input type="tel" id="telefone" name="telefone" />
         <br />
+        
+        <label>Avenida: </label>
+        <input type="text" id="avenida" name="avenida" />
+        <br />
+
+        <label>cep: </label>
+        <input type="text" id="cep" name="cep" />
+        <br />
+
+        <label>Cidade: </label>
+        <input type="text" id="cidade" name="cidade" />
+        <br />
 
         <label>E-mail: </label>
         <input type="email" id="email" name="email"  placeholder="exemplo@examplo.com"  />
@@ -40,7 +52,7 @@ function inscrever() {
         {/* <input type="password" data-type="password" autocomplete="new-password" name="senha"  placeholder="" id="senha" ></input> */}
         <br />
 
-        <button type="submit">Enviar</button>
+        <button type="submit" className="btn btn-primary">Enviar</button>
         </div>
       </form>
     </div>

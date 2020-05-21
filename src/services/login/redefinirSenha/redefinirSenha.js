@@ -11,7 +11,7 @@ function redefinirSenha() {
     <div>
       <form onSubmit={handleSubmit}>
         <div className="redefinirSenha">
-        <label>Redefinir Senha</label>
+        <h1>Redefinir Senha</h1>
         <br />
         <label>cpf: </label>
         <input type="text" name="cpf" id="cpf" />
@@ -19,7 +19,7 @@ function redefinirSenha() {
         <label>E-mail: </label>
         <input type="email" name="email" id="email" />
         <br />
-        <button type="button">Enviar</button>
+        <button type="button"className="btn btn-primary">Enviar</button>
         </div>
       </form>
     </div>

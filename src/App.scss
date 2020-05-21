@@ -66,8 +66,14 @@
   margin-right: 100px; 
 }
 .enviar{
-   float: left;
+   //float: left;
+ display: inline;
 }
-
+.telaInicial{
+  checkbox{
+    margin-right: 20px !important;
+  }
+  
+}
 
 

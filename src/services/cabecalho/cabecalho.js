@@ -6,15 +6,15 @@ const Cabecalho = props => {
       <nav className="navbar navbar-expand-sm bg-light navbar-light">
         
           <div className="navbar-header">
-            <label className="navbar-brand nav-link">Tcc do Lucas</label>
+            <Link className="navbar-brand nav-link" to="/cardapio">ADMINISTRAPIZZA</Link>
           </div>
-          <Link className="nav-link active" to="/">
-            Login
+          <Link className="nav-link active" to="/cardapio">
+            Entrar
         </Link>
           <Link className="nav-link" to="/crud">
-            Crud
+           
         </Link>
-        
+       
       </nav>
     </header>
   );

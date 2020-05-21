@@ -16,16 +16,13 @@ function Login() {
     <form onSubmit={handleSubmit}>
       <div className="container" style={{ width: '30%' }}>
         <div className="form-group" >
+          <Link to="/cardapio">Cardápio</Link>
+          <br />
+          <h1>Entrar</h1>
+          <br />
           <label htmlFor="exampleInputEmail1">Endereço de email</label>
           <input
-            type="email"
-            className="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Seu email"
-            required="required"
-            onChange={event => setEmail(event.target.value)}
-            value={email}
+            type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" required="required" onChange={event => setEmail(event.target.value)} value={email}
           />
           <small id="emailHelp" className="form-text text-muted">
             Nunca vamos compartilhar seu email, com ninguém.
@@ -35,30 +32,16 @@ function Login() {
         <br />
         <div className="form-group">
           <label htmlFor="exampleInputPassword1">Senha</label>
-          <input
-            type="password"
-            className="form-control"
-            id="exampleInputPassword1"
-            placeholder="Senha"
-            onChange={event => setSenha(event.target.value)}
-            value={senha}
-          />
+          <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Senha" onChange={event => setSenha(event.target.value)} value={senha}/>
         </div>
         <div className="form-group form-check">
           <div className="enviar">
-            <button
-              type="submit"
-              className="btn btn-primary form-group form-check-button"
-            >
+            <button type="submit" className="btn btn-primary form-group form-check-button">
               Enviar
         </button>
           </div>
           <div className="checkbox">
-            <input
-              type="checkbox"
-              className="form-check-input"
-              id="exampleCheck1"
-            />
+            <input type="checkbox" className="form-check-input" id="exampleCheck1" />
           </div>
           <div>
             <label className="form-check-label" htmlFor="exampleCheck1">
