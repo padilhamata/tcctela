@@ -2,141 +2,312 @@ import React from "react";
 
 function telaInicial() {
     return (
-        <div className="telaInicial">
-            
-         
-            <h1>Cardápio</h1>
-            <div className="row">
+        <div className="cardapio">
 
+
+            <h1>Cardápio</h1>
+<h2>Pizzas Recomendadas</h2>
+<div className="row">
+    <div className="col-sm-4">
+    <div className=" form-check-inline">
+                        <label className="pizza">ATUM: </label>
+                        <select className="form-control">
+                            <option>Escolha</option>
+                            <option>1 Pequena</option>
+                            <option>2 Pequena</option>
+                            <option>1 Media</option>
+                            <option>2 Media</option>
+                            <option>1 Grande</option>
+                            <option>2 Grande</option>
+                        </select>
+                    </div>
+                    <label className="d-block">Molho,mussarela,atum,tomate,cebola,azeitona,orégano</label>
+
+    </div>
+</div>
+            <div className="row">
                 <div className="col-sm-4">
 
                     <h2>Cardapio de pizzas</h2>
-                    <label  >01 - Atum</label>
+                    <div className=" form-check-inline">
+                        <label className="pizza">ATUM: </label>
+                        <select className="form-control">
+                            <option>Escolha</option>
+                            <option>1 Pequena</option>
+                            <option>2 Pequena</option>
+                            <option>1 Media</option>
+                            <option>2 Media</option>
+                            <option>1 Grande</option>
+                            <option>2 Grande</option>
+                        </select>
+                    </div>
                     <label className="d-block">Molho,mussarela,atum,tomate,cebola,azeitona,orégano</label>
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
+
                     <br />
-                    <label>02 - Bacon</label>
+
+                    <div className=" form-check-inline">
+                        <label className="pizza">Bacon: </label>
+                        <select className="form-control">
+                            <option>Escolha</option>
+                            <option>1 Pequena</option>
+                            <option>2 Pequena</option>
+                            <option>1 Media</option>
+                            <option>2 Media</option>
+                            <option>1 Grande</option>
+                            <option>2 Grande</option>
+                        </select>
+                    </div>
                     <label className="d-block">Molho,mussarela,bacon,tomate,azeitona,orégano</label>
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
                     <br />
-                    <label>03 - Baiana</label>
+
+                    <div className=" form-check-inline">
+                        <label className="pizza">Baiana: </label>
+                        <select className="form-control">
+                            <option>Escolha</option>
+                            <option>1 Pequena</option>
+                            <option>2 Pequena</option>
+                            <option>1 Media</option>
+                            <option>2 Media</option>
+                            <option>1 Grande</option>
+                            <option>2 Grande</option>
+                        </select>
+                    </div>
                     <label className="d-block">Molho,mussarela,presunto,calabresa,bacon,pimenta,cebola,orégano,azeitona</label>
-                    <label>04 - Calabresa</label>
-                    <label className="d-block">Molho,mussarela,calabresa,cebola,orégano,azeitona</label>
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
+<br/>
+                    <div className=" form-check-inline">
+                    <label className="pizza">Calabresa: </label>
+                        <select className="form-control">
+                            <option>Escolha</option>
+                            <option>1 Pequena</option>
+                            <option>2 Pequena</option>
+                            <option>1 Media</option>
+                            <option>2 Media</option>
+                            <option>1 Grande</option>
+                            <option>2 Grande</option>
+                        </select>
+                    </div>
+                        <label className="d-block">Molho,mussarela,calabresa,cebola,orégano,azeitona</label>
                     <br />
-                    <label>05 - Frango</label>
-                    <label className="d-block">Molho,mussarela,frango,azeitona,orégano</label>
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
-                     <br />
+                    <div className=" form-check-inline">
+                        <label className="pizza">Frango:</label>
+                        <select className="form-control">
+                            <option>Escolha</option>
+                            <option>1 Pequena</option>
+                            <option>2 Pequena</option>
+                            <option>1 Media</option>
+                            <option>2 Media</option>
+                            <option>1 Grande</option>
+                            <option>2 Grande</option>
+                        </select>
+                    </div>
+                        <label className="d-block">Molho,mussarela,frango,azeitona,orégano</label>
+                    <br />
 
-                    <label>06 - Napolitana</label>
-                    <label className="d-block">Molho,mussarela,parmesão,tomate,azeitona,orégano</label>
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
+                    <div className=" form-check-inline">
+                        <label className= "pizza">Napolitana:</label>
+                        <select className="form-control">
+                            <option>Escolha</option>
+                            <option>1 Pequena</option>
+                            <option>2 Pequena</option>
+                            <option>1 Media</option>
+                            <option>2 Media</option>
+                            <option>1 Grande</option>
+                            <option>2 Grande</option>
+                        </select>
+                    </div>
+                        <label className="d-block">Molho,mussarela,parmesão,tomate,azeitona,orégano</label>
                     <br />
-                    <label>07 - Portuguesa</label>
-                    <label className="d-block">Molho, mussarela, palmito,catupiry,azeitona,orégano</label>
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
+
+                    <div className=" form-check-inline">
+                        <label className="pizza">Portuguesa: </label>
+                        <select className="form-control">
+                            <option>Escolha</option>
+                            <option>1 Pequena</option>
+                            <option>2 Pequena</option>
+                            <option>1 Media</option>
+                            <option>2 Media</option>
+                            <option>1 Grande</option>
+                            <option>2 Grande</option>
+                        </select>
+                    </div>
+                        <label className="d-block">Molho, mussarela, palmito,catupiry,azeitona,orégano</label>
                     <br />
-                    <label>08 - Quatro Queijo</label>
+
+                    <div className=" form-check-inline">
+                    <label className="pizza" style={{width:100}}>Quatro Queijo:</label>
+                    <select className="form-control">
+                        <option>Escolha</option>
+                        <option>1 Pequena</option>
+                        <option>2 Pequena</option>
+                        <option>1 Media</option>
+                        <option>2 Media</option>
+                        <option>1 Grande</option>
+                        <option>2 Grande</option>
+                    </select>
+                </div>
                     <label className="d-block">Molho,mussarela,provolone, queijo prato,caipira</label>
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
+            </div>
 
-
+            <div className="col-sm-4">
+                <h2>Pizzas Doces</h2>
+            <div className=" form-check-inline">
+                <label className="pizza">California: </label>
+                <select className="form-control">
+                    <option>Escolha</option>
+                    <option>1 Pequena</option>
+                    <option>2 Pequena</option>
+                    <option>1 Media</option>
+                    <option>2 Media</option>
+                    <option>1 Grande</option>
+                    <option>2 Grande</option>
+                </select>
+                <br />
                 </div>
-                <div className="col-sm-4">
-                    <h2>Pizzas Doces</h2>
-                    <label>01 - California</label>
-                    <label className="d-block">Creme de Leite,mussarela,abacaxi,pêssego,banana,maçã,figo,caramelo,cereja</label>
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
-                    <br />
+                <label className="d-block">Creme de Leite,mussarela,abacaxi,pêssego,banana,maçã,figo,caramelo,cereja</label>
 
-                    <label>02 - Banana</label>
-                    <label className="d-block">Creme de leite,mussarela,banana,canela,cereja</label>
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
-                    <br />
-
-                    <label>03 - Chocolate</label>
-                    <label className="d-block">Creme de Leite,mussarela,Chocolate,cereja</label>
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
-                    <br />
-                    <label>04 - Prestígio</label>
-                    <label className="d-block">Creme de leite, mussarela,goiabada,cereja</label>
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
-                    <br />
-                    <label>05 - Romeu e julieta</label>
-                    <label className="d-block">Creme de Leite, mussarela,goiabada,cereja</label>
-
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
-                    <br />
-                    <label>06 - Brigadeiro</label>
-                    <label className="d-block">Creme de leite, mussarela,brigadeiro,chocolate granulado, cereja</label>
-
-                    <input type="checkbox" /> Pequena
-                    <input type="checkbox" /> Média
-                    <input type="checkbox" /> Grande
-                    <br />
-
-
+                <div className=" form-check-inline">
+                <label className="pizza">Banana: </label>
+                <select className="form-control">
+                    <option>Escolha</option>
+                    <option>1 Pequena</option>
+                    <option>2 Pequena</option>
+                    <option>1 Media</option>
+                    <option>2 Media</option>
+                    <option>1 Grande</option>
+                    <option>2 Grande</option>
+                </select>
                 </div>
-                <div className="col-sm-4">
-                    <h2>Bebidas</h2>
-                    <label>01 - Refrigerante Lata R$: 2,00 </label> <input type="checkbox" className="text-left" />Comprar
-                    <br />
-                    <label>Refrigerante 600 ml R$:3,00 </label> <input type="checkbox" className="text-left" />Comprar
-                    <br />
-                    <label>Refrigerante 2lt R$:5,00 </label>
-                    <input type="checkbox" className="text-left" />Comprar
-                    <br />
-                    <label>Cerveja Lata R$:2,50 </label><input type="checkbox" className="text-left" />Comprar<br />
-                    <br />
-                    <h2>Tamanhos</h2><br />
-                    <label>Pequena R$15,00</label><br />
-                    <label>Média R$18,00</label><br />
-                    <label>Grande R$ 20,00</label><br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-
-
-                    <input type="button" value="Comprar" className="btn btn-primary" />
-
+                <label className="d-block">Creme de leite,mussarela,banana,canela,cereja</label>
+                <br />
+                <div className=" form-check-inline">
+                <label className="pizza">Chocolate: </label>
+                <select className="form-control">
+                    <option>Escolha</option>
+                    <option>1 Pequena</option>
+                    <option>2 Pequena</option>
+                    <option>1 Media</option>
+                    <option>2 Media</option>
+                    <option>1 Grande</option>
+                    <option>2 Grande</option>
+                </select>
                 </div>
+                <label className="d-block">Creme de Leite,mussarela,Chocolate,cereja</label>
+                <br />
+                <div className=" form-check-inline">
+                <label className="pizza">Prestígio: </label>
+                <select className="form-control">
+                    <option>Escolha</option>
+                    <option>1 Pequena</option>
+                    <option>2 Pequena</option>
+                    <option>1 Media</option>
+                    <option>2 Media</option>
+                    <option>1 Grande</option>
+                    <option>2 Grande</option>
+                </select>
+                </div>
+                <label className="d-block">Creme de leite, mussarela,goiabada,cereja</label>
+                <br />
+                <div className=" form-check-inline"> 
+                <label className="pizza">Romeu e julieta: </label>
+                <select className="form-control">
+                    <option>Escolha</option>
+                    <option>1 Pequena</option>
+                    <option>2 Pequena</option>
+                    <option>1 Media</option>
+                    <option>2 Media</option>
+                    <option>1 Grande</option>
+                    <option>2 Grande</option>
+                </select>
+                </div>
+                <label className="d-block">Creme de Leite, mussarela,goiabada,cereja</label>
+                <br />
+                <div className=" form-check-inline">
+                <label className="pizza">Brigadeiro</label>
+
+                <select className="form-control">
+                    <option>Escolha</option>
+                    <option>1 Pequena</option>
+                    <option>2 Pequena</option>
+                    <option>1 Media</option>
+                    <option>2 Media</option>
+                    <option>1 Grande</option>
+                    <option>2 Grande</option>
+                </select>
+                </div>
+                <br />
+                <label className="d-block">Creme de leite, mussarela,brigadeiro,chocolate granulado, cereja</label>
+
+
+            </div>
+            <div className="col-sm-4">
+                <h2>Bebidas</h2>
+                <div className=" form-check-inline">
+                <label className="pizza">Refrigerante Lata: </label> 
+                <select className="form-control">
+                    <option>Escolha</option>
+                    <option>1 </option>
+                    <option>2 </option>
+                    <option>3</option>
+                </select>
+                </div>
+                <br/>
+                <div className="form-check-inline">
+                <label className="pizza">Refrigerante 600 ml:</label>
+                <select className="form-control">
+                    <option>Escolha</option>
+                    <option>1 </option>
+                    <option>2 </option>
+                    <option>3</option>
+                </select>
+                </div>
+                    <br />
+                    <div className=" form-check-inline">
+                <label className="pizza">Refrigerante 2lt:</label>
+                <select className="form-control">
+                    <option>Escolha</option>
+                    <option>1 </option>
+                    <option>2 </option>
+                    <option>3</option>
+                </select>
+                </div>
+                    <br />
+                    <div className=" form-check-inline">
+                <label className="pizza">Cerveja Lata: </label>
+                <select className="form-control">
+                    <option>Escolha</option>
+                    <option>1 </option>
+                    <option>2 </option>
+                    <option>3</option>
+                </select>
+                </div>
+                <br />
+                <h2>Valores</h2><br />
+                <label className="pizza">Pequena R$15,00</label><br />
+                <label className= "pizza">Média R$18,00</label><br />
+                <label className ="pizza">Grande R$ 20,00</label><br />
+                <label className="pizza">Refrigerante Lata R$:2,00</label>
+                <br />
+                <label className="pizza">Refrigerante 600ml: R$3,00</label>
+                <br />
+                <label className="pizza">Refrigerante 2lt R$:5,00</label>
+                <br />
+                <label className="pizza">Cerveja Lata R$:2,50</label>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+
+                <input type="button" value="Comprar" className="btn btn-primary" />
 
             </div>
 
         </div>
+
+            </div >
     );
 }
 export default telaInicial;

@@ -16,8 +16,7 @@ function Login() {
     <form onSubmit={handleSubmit}>
       <div className="container" style={{ width: '30%' }}>
         <div className="form-group" >
-          <Link to="/cardapio">Cardápio</Link>
-          <br />
+          <br/>
           <h1>Entrar</h1>
           <br />
           <label htmlFor="exampleInputEmail1">Endereço de email</label>
