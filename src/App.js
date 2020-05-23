@@ -9,6 +9,7 @@ import RedefinirSenha from "./services/login/redefinirSenha/redefinirSenha";
 import Inscrever from "./services/login/inscrever/inscrever";
 import Cardapio from "./services/usuario/cardapio/cardapio";
 import trocaSenha from "./services/login/trocarSenha/trocarSenha"
+import Pagamento from "./services/usuario/pagamento/pagamento";
 class App extends Component {
   render() {
     return (
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/redefinirSenha" exact component={RedefinirSenha} />
           <Route path="/inscrever" exact component={Inscrever} />
           <Route path="/trocasenha" exact component={trocaSenha}/>
+          <Route path="/pagamento" exact component={Pagamento}/>
         </div>
       </BrowserRouter>
     );
