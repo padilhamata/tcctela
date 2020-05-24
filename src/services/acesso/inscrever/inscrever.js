@@ -1,5 +1,5 @@
 import React from "react";
-import api from "../../api";
+import api from "../../util/api";
 
 
 function inscrever() {
@@ -37,6 +37,10 @@ function inscrever() {
 
         <label>cep: </label>
         <input type="text" id="cep" name="cep" />
+        <br />
+
+        <label>Setor: </label>
+        <input type="text" id="cidade" name="cidade" />
         <br />
 
         <label>Cidade: </label>

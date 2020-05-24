@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
-import Crud from "./services/crud";
+import Crud from "./services/util/crud";
 import "./App.scss";
 import Cabecalho from "./services/cabecalho/cabecalho";
-import Login from "./services/login/login/login";
-import RedefinirSenha from "./services/login/redefinirSenha/redefinirSenha";
-import Inscrever from "./services/login/inscrever/inscrever";
+import Login from "./services/acesso/login/login";
+import RedefinirSenha from "./services/acesso/redefinirSenha/redefinirSenha";
+import Inscrever from "./services/acesso/inscrever/inscrever";
 import Cardapio from "./services/usuario/cardapio/cardapio";
-import trocaSenha from "./services/login/trocarSenha/trocarSenha"
+import trocaSenha from "./services/acesso/trocarSenha/trocarSenha"
 import Pagamento from "./services/usuario/pagamento/pagamento";
+import Entrega from "./services/usuario/entrega/entrega";
+import Pedidos from "./services/admnitrativo/pedidos/pedidos"
 class App extends Component {
   render() {
     return (
@@ -23,6 +25,8 @@ class App extends Component {
           <Route path="/inscrever" exact component={Inscrever} />
           <Route path="/trocasenha" exact component={trocaSenha}/>
           <Route path="/pagamento" exact component={Pagamento}/>
+          <Route path="/entrega" exact component={Entrega}/>
+          <Route path="/pedidos" exact component={Pedidos}/>
         </div>
       </BrowserRouter>
     );

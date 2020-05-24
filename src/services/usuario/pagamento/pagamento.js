@@ -49,7 +49,7 @@ function pagamento() {
   </li>
 </ul>
 </div>
-<Link   className="btn btn-primary" to="/novocartao" >Continuar</Link>
+<Link   className="btn btn-primary" to="/entrega" >Continuar</Link>
 
     </div>
   );

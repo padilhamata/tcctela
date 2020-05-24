@@ -95,5 +95,11 @@
     text-align: left;
   }
 }
-
-
+.pedidos{
+  .prato{
+    width: 20%;
+    display: inline-block;
+   float: left;
+    margin-left: 2%;
+  }
+}

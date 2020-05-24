@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import api from "../../api";
+import api from "../../util/api";
 import { Link } from "react-router-dom";
 
 function Login() {
