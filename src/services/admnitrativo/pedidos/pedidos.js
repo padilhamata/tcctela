@@ -27,22 +27,22 @@ function pedidos() {
         </div>
 
         <div className="prato">
-          <label>Cliente: Lucas</label>
+          <label>Cliente: João</label>
           <br />
-          <label>status: cozinha</label>
+          <label>status: Em viagem</label>
           <br />
-          <label>valor: 100,00</label>
+          <label>valor: 50,00</label>
           <br />
           <div class="progress">
             <div
               className="progress-bar"
               role="progressbar"
-              style={{ width: "25%" }}
+              style={{ width: "50%" }}
               aria-valuenow="25"
               aria-valuemin="0"
               aria-valuemax="100"
             >
-              25%
+              50%
             </div>
           </div>
         </div>
