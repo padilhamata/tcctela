@@ -14,6 +14,8 @@ import Entrega from "./services/usuario/entrega/entrega";
 import Pedidos from "./services/admnitrativo/pedidos/pedidos";
 import Estoque from "./services/admnitrativo/estoque/estoque";
 import Colaboradores from "./services/admnitrativo/colaboradores/colaboradores";
+import Local from "./services/admnitrativo/local/local"
+import Dashboard from"./services/admnitrativo/dashboard/dashboard"
 class App extends Component {
   render() {
     return (
@@ -31,6 +33,8 @@ class App extends Component {
           <Route path="/pedidos" exact component={Pedidos} />
           <Route path="/estoque" exact component={Estoque} />
           <Route path="/colaboradores" exact component={Colaboradores}/>
+          <Route path="/local" exact component={Local}/>
+          <Route path="/dashboard" exact component={Dashboard}/>
         </div>
       </BrowserRouter>
     );
