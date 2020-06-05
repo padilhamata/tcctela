@@ -20,31 +20,23 @@ function pagamento() {
       <div className="pagamento">
       <h1>Pagamento</h1>
 <label>Valor das compras: 100,00</label>
-  
+<br/>
+<br/>
+<h3>Qual a forma de Pagamento?</h3>  
 <ul className="nav flex-column ">
   <li className="nav-item">
     <input type="radio" name="pagamento"/>
-    <label> Dinheiro</label>
+    <label> Dinheiro, Levar troco para: </label>
+    <input type="number" />
+    <br/>
+
   </li>
 
   <li className="nav-item">
   <input type="radio" name="pagamento"/>
-    <label> Novo Cartão</label>
-    <br/>
-    <label>Número do Cartão: </label>
+    <label>Cartão, Digite a bandeira do Cartão: </label>
     <input />
     <br/>
-    <label>Nome Completo: </label>
-    <input />
-    <br/>
-    <label>Data de vencimento: </label>
-    <input />
-    <br/>
-    <label>Código de segurança: </label>
-    <input />
-    <br/>
-    <label>CPF do titular do cartão: </label>
-    <input />
     <br/>
   </li>
 </ul>

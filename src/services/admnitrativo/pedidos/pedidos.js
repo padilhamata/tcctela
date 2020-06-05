@@ -6,9 +6,13 @@ function pedidos() {
       <h1>Pedidos</h1>
       <div className="pedidos">
         <div className="prato">
+          <label>CÓD: 01</label>
+          <br/>
           <label>Cliente: Lucas</label>
           <br />
           <label>status: cozinha</label>
+          <br />
+          <label>Setor:Faiçalville</label>
           <br />
           <label>valor: 100,00</label>
           <br />
@@ -27,9 +31,13 @@ function pedidos() {
         </div>
 
         <div className="prato">
+        <label>CÓD: 02</label>
+          <br/>
           <label>Cliente: João</label>
           <br />
           <label>status: Em viagem</label>
+          <br />
+          <label>Setor: Vila Rosa</label>
           <br />
           <label>valor: 50,00</label>
           <br />
