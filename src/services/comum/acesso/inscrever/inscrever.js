@@ -1,5 +1,5 @@
 import React from "react";
-import api from "../../util/api";
+import api from "../../../util/api";
 
 
 function inscrever() {

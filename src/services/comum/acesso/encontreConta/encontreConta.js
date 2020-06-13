@@ -1,7 +1,7 @@
 import React from "react";
-import api from "../../util/api";
+import api from "../../../util/api";
 
-function redefinirSenha() {
+function encontre() {
   async function handleSubmit(event) {
     event.preventDefault();
     const response = await api.post("/redefinirSenha/");
@@ -9,9 +9,10 @@ function redefinirSenha() {
   }
   return (
     <div>
+      <br/>
       <form onSubmit={handleSubmit}>
         <div className="redefinirSenha">
-        <h1>Redefinir Senha</h1>
+        <h1>Encontre sua conta</h1>
         <br />
         <label>cpf: </label>
         <input type="text" name="cpf" id="cpf" />
@@ -25,4 +26,4 @@ function redefinirSenha() {
     </div>
   );
 }
-export default redefinirSenha;
+export default encontre;

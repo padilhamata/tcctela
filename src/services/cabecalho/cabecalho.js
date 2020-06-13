@@ -14,7 +14,6 @@ const Cabecalho = props => {
           <Link className="nav-link" to="/crud"/>
 
           <Link className="nav-link" to="/pedidos"/>
-     
        
       </nav>
     </header>
