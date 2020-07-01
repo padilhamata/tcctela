@@ -32,10 +32,12 @@ function pagamento() {
 
   </li>
 
-  <li className="nav-item">
+  <li className="nav-item" >
   <input type="radio" name="pagamento"/>
-    <label>Cartão, Digite a bandeira do Cartão: </label>
-    <input />
+    <label >Cartão, Digite a bandeira do Cartão: </label>
+    <select >
+              <option>Escolha</option>
+            </select>
     <br/>
     <br/>
   </li>

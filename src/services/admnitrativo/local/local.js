@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function local (){
     return(<>
@@ -19,6 +20,10 @@ function local (){
       <label>Cidade: </label>
       <label>Goiânia</label>
       <br/>
+      <br/>
+      <h3>Orientações Gerais</h3>
+      <p> Usar máscara, higienizar o dinheiro ou a máquina de cartão. Clique <Link to="/coronavirus"> aqui</Link> para saber mais. </p>
+
 
 
 
