@@ -13,9 +13,9 @@ function Crud() {
     let response;
     console.log(nome, quantidade, valor);
     if (id === 0) {
-      response = await api.post("/produtos", { nome, quantidade, valor });
+      response = await api.post("/crud", { nome, quantidade, valor });
     } else {
-      response = await api.put("/produtos", {
+      response = await api.put("/crud", {
         id,
         nome,
         quantidade,
@@ -27,7 +27,7 @@ function Crud() {
   }
 
   async function handleAtualiza() {
-    const response = await api.get("/produtos");
+    const response = await api.get("/crud");
     setUser(response.data);
     console.log(response);
   }
@@ -40,7 +40,7 @@ function Crud() {
   }
 
   async function handleExcluir(id) {
-    const responsedelete = await api.delete("/produtos/" + id);
+    const responsedelete = await api.delete("/crud/" + id);
     const get = await api.get("/produtos");
     setUser(get.data);
     console.log(responsedelete);
