@@ -12,16 +12,16 @@ function Crud() {
     event.preventDefault();
     let response;
     if (id.length === 0) {
-      response = await api.post("/produto", { nome, quantidade, valor });
+      response = await api.post("/crud", { nome, quantidade, valor });
     } else {
       console.log(id, nome, quantidade, valor);
-      response = await api.put("/produto", { id, nome, quantidade, valor });
+      response = await api.put("/crud", { id, nome, quantidade, valor });
     }
     console.log(response);
   }
 
   async function handleAtualiza() {
-    const response = await api.get("/produtos");
+    const response = await api.get("/crud");
     setUser(response.data);
     console.log(response);
   }
@@ -48,13 +48,12 @@ function Crud() {
     setquantidade(quantidadeEditado);
     setvalor(valorEditado);
     console.log(id, nome, quantidade, valor, "aqui");
-    const responsedelete = await api.post("/produto/delete", {
-      id,
-      nome,
-      quantidade,
-      valor
-    });
-    const get = await api.get("/produtos");
+    const responsedelete = await api.delete('/crud/'+id,{
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    }});
+    const get = await api.get("/crud");
     setUser(get.data);
     console.log(responsedelete);
     console.log(get);
